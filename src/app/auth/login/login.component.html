@@ -1,0 +1,23 @@
+<mat-card>
+    <mat-card-header>
+      <div style="margin: auto;padding: 30px;"><mat-card-title><h1 style="font-size: 30px;"><strong>INGRESAR AL LOGUEO</strong></h1></mat-card-title></div>
+    </mat-card-header>
+    <mat-card-content>
+       <div style="display: flex; flex-direction: column; margin: auto; width: 30%;">
+        <mat-form-field appearance="fill">
+            <mat-label>Ingresar Usuario</mat-label>
+            <input matInput type="text" #usuarioText>
+          </mat-form-field>
+          <mat-form-field appearance="fill">
+            <mat-label>Ingresar Password</mat-label>
+            <input matInput type="password" #PasswordText>
+          </mat-form-field>
+       </div>
+
+    </mat-card-content>
+
+    <mat-card-actions>
+     <button mat-raised-button color="primary" style="margin: auto; margin-bottom: 40px;"
+     (click)="submit(usuarioText,PasswordText)">INGRESAR</button>
+    </mat-card-actions>
+  </mat-card>

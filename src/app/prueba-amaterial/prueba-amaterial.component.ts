@@ -2,11 +2,12 @@ import {Component} from '@angular/core';
 import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
 import {MatTableModule} from '@angular/material/table';
+import { MaterialModule } from '../angular-material/material/material.module';
 
 @Component({
   selector: 'app-prueba-amaterial',
   standalone: true,
-  imports: [MatButtonModule, MatIconModule,MatTableModule],
+  imports: [MaterialModule],
   templateUrl: './prueba-amaterial.component.html',
   styleUrl: './prueba-amaterial.component.css'
 })
